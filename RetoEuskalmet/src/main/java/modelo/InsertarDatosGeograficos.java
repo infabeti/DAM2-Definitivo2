@@ -23,7 +23,7 @@ public class InsertarDatosGeograficos {
     static String[] archivos = { "municipios", "estaciones", "espacios-naturales" };
     static String[] contenedores = { "municipio", "estación", "espacio-natural" };
 
-	public static void main(String[] args) {
+	public static void InsertarDatosGeograficos() {
 		Object[] objetos = null;
 
 		for (int num = 0; num < archivos.length; num++) {
