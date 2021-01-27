@@ -126,7 +126,7 @@ public class InsertarRelacionExiste {
 	}
 
 	public static String extraerDato(String archivo, String etiqueta) {
-		String dato = "";
+		String dato = null;
 		String etiquetaIzqda = "<" + etiqueta + ">";
 		String etiquetaDrcha = "</" + etiqueta + ">";
 		String[] corte1 = archivo.split(etiquetaIzqda);
@@ -142,6 +142,6 @@ public class InsertarRelacionExiste {
 		if (dato != null)
 			return dato;
 		else
-			return "SIN DATO";
+			return "";
 	}
 }
