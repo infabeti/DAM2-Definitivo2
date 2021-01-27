@@ -11,7 +11,7 @@ public class InsertarDatosAtmosfericos {
 
 	static String[] estacionesMeteo = new String[59];
 
-	public static void main(String[] args) {
+	public static void InsertarDatosAtmosfericos() {
 		InsertarDatosGeograficos obj = new InsertarDatosGeograficos(); // Instancia para llamar a los métodos de la
 																		// clase InsertarDatosGeograficos
 		CalidadAire[] objetos = new CalidadAire[estacionesMeteo.length];

@@ -88,7 +88,7 @@ public class DescargarJSON {
 	}
     }
 
-    public static void main(String[] args) {
+    public static void DescargarJSON() {
 	String[] direcciones = {
 		"https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2020/es_def/adjuntos/index.json",
 		"https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2020/es_def/adjuntos/estaciones.json",
