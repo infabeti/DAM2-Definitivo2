@@ -15,26 +15,20 @@ import modelo.InsertarRelacionExiste;
 public class lanzarServidor {
 
 	public static void main(String[] args) throws FileNotFoundException, JSONException, IOException {
-
-//  Lanza las clases en el orden:
-//		
-//	1.- DescargarJSON
-//	2.- JSONtoXML
-		//Aquí irá la comprobación con Hash 1
-//	3.- InsertarDatosGeograficos
-//	4.- DescargarDatosMetereologicos
-		//Aquí irá la comprobación con Hash 2
-//	5.- InsertarDatosAtmosfericos
-//	6.- InsertarRelacionExiste
+		DescargarJSON descargarJSON = new DescargarJSON();
+		JSONtoXML jsonToXml = new JSONtoXML();
+		InsertarDatosGeograficos insertarDatosGeograficos = new InsertarDatosGeograficos();
+		DescargarDatosMetereologicos descargarDatosMetereologicos = new DescargarDatosMetereologicos();
+		InsertarDatosAtmosfericos insertarDatosAtmosfericos = new InsertarDatosAtmosfericos();
+		InsertarRelacionExiste insertarRelacionExiste = new InsertarRelacionExiste();
 		
-		DescargarJSON.DescargarJSON();
-		JSONtoXML.JSONtoXML();
+		descargarJSON.DescargarJSON();
+		jsonToXml.JSONtoXML();
+		insertarDatosGeograficos.InsertarDatosGeograficos();
+		descargarDatosMetereologicos.DescargarDatosMetereologicos();
+		insertarDatosAtmosfericos.InsertarDatosAtmosfericos();
+		insertarRelacionExiste.InsertarRelacionExiste();
 		
-		InsertarDatosGeograficos.InsertarDatosGeograficos();
-		DescargarDatosMetereologicos.DescargarDatosMetereologicos();
-		
-		InsertarDatosAtmosfericos.InsertarDatosAtmosfericos();
-		InsertarRelacionExiste.InsertarRelacionExiste();
 	}
 
 }

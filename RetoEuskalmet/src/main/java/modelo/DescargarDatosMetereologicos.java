@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class DescargarDatosMetereologicos {
 
-	public static void DescargarDatosMetereologicos() throws FileNotFoundException, IOException {
+	public void DescargarDatosMetereologicos() throws FileNotFoundException, IOException {
 		
 		JSONtoXML conversor = new JSONtoXML();
 		DescargarJSON descarga = new DescargarJSON();
