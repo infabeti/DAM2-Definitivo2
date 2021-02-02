@@ -8,7 +8,6 @@ import org.json.JSONException;
 
 import vista.VentanaInfo;
 
-
 public class lanzarServidor {
 
 	public static void main(String[] args) throws FileNotFoundException, JSONException, IOException{
@@ -24,6 +23,21 @@ public class lanzarServidor {
 				}
 			}
 		});
+
+	public static void main(String[] args) throws FileNotFoundException, JSONException, IOException {
+		DescargarJSON descargarJSON = new DescargarJSON();
+		JSONtoXML jsonToXml = new JSONtoXML();
+		InsertarDatosGeograficos insertarDatosGeograficos = new InsertarDatosGeograficos();
+		DescargarDatosMetereologicos descargarDatosMetereologicos = new DescargarDatosMetereologicos();
+		InsertarDatosAtmosfericos insertarDatosAtmosfericos = new InsertarDatosAtmosfericos();
+		InsertarRelacionExiste insertarRelacionExiste = new InsertarRelacionExiste();
+		
+		descargarJSON.DescargarJSON();
+		jsonToXml.JSONtoXML();
+		insertarDatosGeograficos.InsertarDatosGeograficos();
+		descargarDatosMetereologicos.DescargarDatosMetereologicos();
+		insertarDatosAtmosfericos.InsertarDatosAtmosfericos();
+		insertarRelacionExiste.InsertarRelacionExiste();
 	}
 }
 
